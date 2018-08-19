@@ -34,10 +34,10 @@ int main(){
     }
   }
   for(int i = 1; i <= k; i++){
-    printf("%d %d\n", k, course[k].size());
-    sort(course[k].begin(), course[k].end());
-    for(int j = 0; j < course[k].size(); j++){
-      get_name(name, course[k][j]);
+    printf("%d %d\n", i, course[i].size());
+    sort(course[i].begin(), course[i].end());
+    for(int j = 0; j < course[i].size(); j++){
+      get_name(name, course[i][j]);
       printf("%s\n", name);
     }
   }
